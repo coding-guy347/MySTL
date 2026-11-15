@@ -1,0 +1,20 @@
+﻿# Visual Studio / build output
+.vs/
+x64/
+Debug/
+Release/
+*.user
+*.suo
+*.cache
+*.ipch
+ipch/
+*.VC.db
+*.VC.opendb
+*.tlog
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+*.sdf
+*.opensdf

@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="MySTL/MySTL.vcxproj" Id="563eddd9-2b27-4761-8968-a64f4f36a9c7" />
+</Solution>
