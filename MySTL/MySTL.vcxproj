@@ -147,9 +147,16 @@
     <ClInclude Include="List.h" />
     <ClInclude Include="ListIterator.h" />
     <ClInclude Include="ListNode.h" />
+    <ClInclude Include="pair.h" />
+    <ClInclude Include="priority_queue.h" />
+    <ClInclude Include="queue.h" />
+    <ClInclude Include="RBTree.h" />
+    <ClInclude Include="stack.h" />
     <ClInclude Include="stl_exception.h" />
+    <ClInclude Include="RBTreeIterator.h" />
     <ClInclude Include="type_traits.h" />
     <ClInclude Include="vector.h" />
+    <ClInclude Include="RBNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

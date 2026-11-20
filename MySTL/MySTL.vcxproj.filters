@@ -44,5 +44,26 @@
     <ClInclude Include="stl_exception.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="priority_queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RBNode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pair.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RBTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RBTreeIterator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

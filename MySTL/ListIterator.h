@@ -1,6 +1,5 @@
 ﻿#pragma once
 #include"ListNode.h"
-#include"ListIterator.h"
 namespace mystl
 {
 	
@@ -17,7 +16,7 @@ namespace mystl
 
 		ListNode<T>* ptr;
 		
-		ListIterator(ListNode<T>*p=nullptr):ptr(p){}
+		explicit ListIterator(ListNode<T>*p=nullptr):ptr(p){}
 
 		ListIterator& operator++()
 		{

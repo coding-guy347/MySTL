@@ -8,7 +8,6 @@ namespace mystl
 	class  List
 	{
 	public:
-		ListNode<T>* head;
 		List()
 		{
 			head = new ListNode<T>();
@@ -53,17 +52,17 @@ namespace mystl
 			insert(head->next, value);
 		}
 
-		ListIterator<T> begin()
+		ListIterator<T> begin()const
 		{
 			return ListIterator<T>(head->next);
 		}
 
-		ListIterator<T> end()
+		ListIterator<T> end()const
 		{
 			return ListIterator<T>(head);
 		}
 
-		size_t size()
+		size_t size()const
 		{
 			int count = 0;
 			ListNode<T>*cur = head->next;
@@ -93,5 +92,30 @@ namespace mystl
 			delete Node;
 		}
 		
+		void swap(ListNode<T>* p, ListNode<T>* q)
+		{
+			if (p == q) return;
+			ListNode<T>* p_prev = p->prev;
+			ListNode<T>* q_prev = q->prev;
+			unlink(p);
+			unlink(q);
+			insert_prev(p_prev->next, q);
+			insert_prev(q_prev->next, p);
+		}
+	private:
+		ListNode<T>* head;
+		void insert_prev(ListNode<T>* pos, ListNode<T>* p)
+		{
+			p->prev = pos->prev;
+			p->next = pos;
+			pos->prev->next = p;
+			pos->prev = p;
+		}
+
+		void unlink(ListNode<T>* node)
+		{
+			node->prev->next = node->next;
+			node->next->prev = node->prev;
+		}
 	};
 }
